@@ -1,6 +1,8 @@
+/* Importar fuentes de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Josefin+Sans:ital,wght@1,300&family=Roboto:wght@100;500&display=swap');
 
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +19,7 @@ li {
     list-style: none;
 }
 
+/* Encabezado */
 .header2 {
     padding: 5px 3px 10px 0px;
     text-align: center;
@@ -28,6 +31,48 @@ li {
     font-size: 20px;
 }
 
+.header2 h2 {
+    width: auto;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 767.98px)  {
+
+
+    .nav-list2 {
+        overflow-x: scroll;
+    }
+
+    .imgfilmo {
+        width: 100%;
+        height: 100%;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
+
+    .foto {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .mi-columna {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .filmografia li a{
+        font-size: 5vw;
+    }
+}
+
+
+
+/* Navegación */
 .nav2 {
     display: flex;
     justify-content: center;
@@ -64,6 +109,7 @@ li {
     margin-right: 10px;
 }
 
+/* Contenido principal */
 .content2 {
     flex-grow: 1;
     background-color: rgb(15, 14, 46);
@@ -81,48 +127,54 @@ li {
     gap: 20px;
 }
 
-.imgfilmo img{
-
-    width: 440px;
-    height: 640px;
+.imgfilmo img {
+    max-width: 400px;
+    max-height: 600px;
 }
 
 .overlay:hover {
     opacity: 0.5;
 }
 
+/* Botones */
 .boton {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
     background-color: rgb(90, 22, 22);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    text-decoration: none;
+    position: relative;
+    top: 10px;
 }
 
+
+.boton a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-align: center;
+}
+
+.boton:hover {
+    background-color: rgba(90, 22, 22, 0.8);
+}
+
+/* Pie de página */
 .footerfilmo2 {
     font-family: 'Josefin Sans', sans-serif;
-    max-width: 600px; /* Ajusta el ancho según tus preferencias */
+    max-width: 600px;
     padding: 20px;
     text-align: justify;
     color: white;
     background-color: rgba(88, 85, 85, 0.7);
-    position: absolute;
+    position: relative;
     top: 200px;
     left: 20px;
-    column-count: 2; /* Número de columnas */
-    column-gap: 20px; /* Espacio entre columnas */
+    column-count: 2;
+    column-gap: 20px;
 }
-
-.clearfix{
-    clear:both;
-    padding: 150px;
-}
-
-
 
 .footer2 {
     display: flex;
@@ -131,22 +183,9 @@ li {
     padding: 10px;
     background: linear-gradient(to right, rgb(24, 24, 26), rgb(90, 22, 22));
 }
-.boton {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: rgb(90, 22, 22);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-.boton a{
-    color: #fff;
-    text-decoration: none;
-}
 
-.boton:hover  {
-    background-color: rgba(90, 22, 22, 0.8);
+/* Estilos adicionales */
+.mi-columna {
+    justify-content: center;
+    align-items: center;
 }
